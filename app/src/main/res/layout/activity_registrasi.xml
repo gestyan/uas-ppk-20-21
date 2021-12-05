@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".RegistrasiActivity">
+
+    <!--Header-->
+    <TextView
+        android:id="@+id/title_new_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp"
+        />
+
+    <!--Fullname-->
+    <TextView
+        android:id="@+id/fullname_registrasi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title_new_account_tv"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/fullname_registrasi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/fullname_registrasi_tv"
+        android:hint="John Doe"/>
+
+    <TextView
+        android:id="@+id/alert_fullname_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/danger"
+        android:text="Nama harus diisi"
+        android:layout_below="@+id/fullname_registrasi_et"
+        android:layout_marginBottom="12dp"/>
+
+    <!--Username-->
+    <TextView
+        android:id="@+id/username_registrasi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_fullname_tv"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/username_registrasi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/username_registrasi_tv"
+        android:hint="john_doe"/>
+
+    <TextView
+        android:id="@+id/alert_username_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/danger"
+        android:text="Username telah terdaftar"
+        android:layout_below="@+id/username_registrasi_et"
+        android:layout_marginBottom="12dp"/>
+
+    <!--Email-->
+    <TextView
+        android:id="@+id/email_registrasi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_username_tv"
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/email_registrasi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_registrasi_tv"
+        android:hint="john_doe@example.com"/>
+
+    <TextView
+        android:id="@+id/alert_email_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/danger"
+        android:text="Format e-mail salah"
+        android:layout_below="@+id/email_registrasi_et"
+        android:layout_marginBottom="12dp"/>
+
+    <!--Password-->
+    <TextView
+        android:id="@+id/password_registrasi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_email_tv"
+        android:text="Password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/password_registrasi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_registrasi_tv"
+        android:hint="*******"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:id="@+id/alert_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/danger"
+        android:text="Password harus terdiri dari angka dan huruf"
+        android:layout_below="@+id/password_registrasi_et"
+        android:layout_marginBottom="12dp"/>
+
+    <!--Confirm Password-->
+    <TextView
+        android:id="@+id/confirm_password_registrasi_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_password_tv"
+        android:text="Konfirmasi Password"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password_registrasi_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password_registrasi_tv"
+        android:hint="*******"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        tools:ignore="Deprecated" />
+
+    <TextView
+        android:id="@+id/alert_confirm_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/danger"
+        android:text="Konfirmasi Password Tidak Cocok"
+        android:layout_below="@+id/confirm_password_registrasi_et"
+        android:layout_marginBottom="12dp"/>
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/submit_registrasi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@+id/alert_confirm_password_tv"
+        android:backgroundTint="@color/primary"/>
+
+<!--  Already Have an Acocunt?  -->
+    <TextView
+        android:id="@+id/already_have_account_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary"
+        android:text="Sudah Memiliki Akun?"
+        android:layout_below="@+id/submit_registrasi_btn"
+        android:textAlignment="center"
+        android:layout_marginBottom="12dp"/>
+
+</RelativeLayout>

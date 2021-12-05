@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/update_header_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Profil"
+        android:textSize="24dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/fullname_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama Lengkap"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/update_header_title_tv"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/fullname_update_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/fullname_update_tv"
+        android:text="John Doe"/>
+
+    <!--Username-->
+    <TextView
+        android:id="@+id/username_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fullname_update_et"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <TextView
+        android:id="@+id/username_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@+id/username_title_tv"
+        android:text="john_doe"/>
+
+    <!--Email-->
+    <TextView
+        android:id="@+id/email_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_update_tv"
+        android:text="E-mail"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/email_update_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_update_tv"
+        android:text="john_doe@example.com"/>
+
+    <!--Password-->
+    <TextView
+        android:id="@+id/password_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email_update_et"
+        android:text="Password Baru"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/password_update_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_update_tv"
+        android:inputType="textPassword"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/alert_edit_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password harus terdiri dari angka dan huruf"
+        android:textColor="@color/danger"
+        android:layout_below="@+id/password_update_et"/>
+
+    <!--Confirm Password-->
+    <TextView
+        android:id="@+id/confirm_password_update_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alert_edit_password_tv"
+        android:text="Konfirmasi Password Baru"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/confirm_password_update_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm_password_update_tv"
+        android:inputType="textPassword"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/alert_edit_confirm_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi password tidak sesuai"
+        android:textColor="@color/danger"
+        android:layout_below="@+id/confirm_password_update_et"
+        android:layout_marginBottom="16dp"/>
+
+    <!--Submit Button-->
+    <Button
+        android:id="@+id/update_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@+id/alert_edit_confirm_password_tv"
+        android:backgroundTint="@color/primary"/>
+
+    <Button
+        android:id="@+id/cancel_update_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/update_profile_btn"
+        android:backgroundTint="@color/warning"/>
+
+</RelativeLayout>
